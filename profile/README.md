@@ -13,6 +13,14 @@ and data-flow mapping, not boilerplate.
 - ⚙️ **Developer tooling & automation** — CI/CD pipelines with security gates
 - 📊 **Data platforms** — minimization-first architecture, GDPR-aware
 
+## What we offer
+Custom software development, delivered solo and end-to-end by a single engineer:
+
+- **Full-Stack Web Applications** — responsive front-ends, scalable back-ends, and deployment on modern stacks (React/Vite, Node, Express, Rust).
+- **APIs & Integrations** — least-privilege access and encrypted-by-default integrations between systems.
+- **Privacy-By-Design Engineering** — consent management, encryption architectures, audit logging, and secure data flows engineered into the product, not bolted on.
+- **DPDP Act & GDPR Compliance Implementation** — regulatory requirements translated into technical roadmaps for SaaS, fintech, and health-tech products. Technical consultancy only — not legal advice.
+
 ## How we work
 
 | Principle | Practice |
