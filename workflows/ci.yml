@@ -1,0 +1,34 @@
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Run tests
+        run: npm test --if-present
+
+      # Dependency audit — fails on known vulnerabilities
+      - name: Dependency audit
+        run: npm audit --audit-level=high
+
+      # Fail build if .env or credential-looking files sneak in
+      - name: Guard against committed secrets files
+        run: |
+          if git ls-files --error-unmatch .env 2>/dev/null; then
+            echo "::error::.env must never be committed"; exit 1
+          fi
