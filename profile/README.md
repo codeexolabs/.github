@@ -38,4 +38,5 @@ Custom software development, delivered solo and end-to-end by a single engineer:
 
 ---
 
-*Owned by Suman Jangili · India*
+*Owned by Suman Jangili · India*  |  *This is the [Official GitHub organization](https://github.com/codeexolabs) for codeexo.com (verified).*
+> **Note:** github.com/codeexo is not affiliated with us." Publishing this proactively on your own channels prevents others from discovering the collision before you've framed it.
